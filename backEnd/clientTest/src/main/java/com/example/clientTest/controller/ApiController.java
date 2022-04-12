@@ -1,10 +1,10 @@
 package com.example.clientTest.controller;
 
+import com.example.clientTest.dto.User;
 import com.example.clientTest.service.RestTemplateService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.*;
+@Slf4j
 @RestController
 @RequestMapping("/client")
 public class ApiController {
@@ -16,7 +16,8 @@ public class ApiController {
   }
 
   @GetMapping("")
-  public String getHello(){
-    return restTemplateService.hello();
+  public User getHello(){
+    return restTemplateService.post();
   }
+
 }
