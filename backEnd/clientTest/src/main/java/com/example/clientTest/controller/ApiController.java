@@ -1,5 +1,6 @@
 package com.example.clientTest.controller;
 
+import com.example.clientTest.dto.Req;
 import com.example.clientTest.dto.User;
 import com.example.clientTest.service.RestTemplateService;
 import lombok.extern.slf4j.Slf4j;
@@ -16,8 +17,8 @@ public class ApiController {
   }
 
   @GetMapping("")
-  public User getHello(){
-    return restTemplateService.post();
+  public Req<User> getHello(){
+    return restTemplateService.genericExchange();
   }
 
 }
