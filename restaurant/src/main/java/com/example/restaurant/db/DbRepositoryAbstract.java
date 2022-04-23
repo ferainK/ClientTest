@@ -40,7 +40,7 @@ abstract public class DbRepositoryAbstract<T extends DbEntity> implements DbRepo
   }
 
   @Override
-  public List<T> listAll() {
+  public List<T> findAll() {
     return db;
   }
 }

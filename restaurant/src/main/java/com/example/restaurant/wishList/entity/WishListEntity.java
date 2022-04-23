@@ -3,12 +3,13 @@ package com.example.restaurant.wishList.entity;
 import com.example.restaurant.db.DbEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 public class WishListEntity extends DbEntity {
   private String title;                 // 가게명
   private String category;              // 카테고리

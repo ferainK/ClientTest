@@ -23,10 +23,10 @@ public class SearchLocalRes {
     private String title;
     private String link;
     private String description;
+    private String category;
     private String telephone;
     private String address;
     private String roadAddress;
-    private String category;
     private int mapx;
     private int mapy;
 
